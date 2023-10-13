@@ -1,0 +1,41 @@
+    Dim i As Long
+    Dim j As Integer
+    Dim total As Double
+    Dim rowCount As Long
+    Dim start As Long
+    
+    Range("I1").Value = "Ticker"
+    Range("J1").Value = "Yearly Change"
+    Range("K1").Value = "Percent Change"
+    Range("L1").Value = "Total Stock Value"
+    Range("P1").Value = "Ticker"
+    Range("Q1").Value = "Value"
+    Range("O2").Value = "Greatest % Increase"
+    Range("O3").Value = "Greatest % Decrease"
+    Range("O4").Value = "Greatest Total Volume"
+    
+   start = 2
+   total
+    
+    rowCount = Cells(Row.Count, 1).End(xIUp).Row
+    
+    For i = 2 To rowCount
+    
+        If (Cells(i, 1).Value <> Cells(i + 1, 1).Value) Then
+        
+         total = total + Cells(i, 7).Value
+        
+        If total = 0 Then
+        
+            Range("I" & 2 + j).Value = Cells(i, 1).Value
+            Range("J" & 2 + j).Value = 0
+            Range("K" & 2 + j).Value = "%" & 0
+            Range("L" & 2 + j).Value = 0
+            
+            Else
+            If Cells(start, 3) = 0 Then
+                For find_val = start To i
+                    If Cells(find_
+        
+        End If
+    Next i
